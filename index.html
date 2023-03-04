@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO SLIDER WITH TEXTS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+<div id="slidercontainer">
+
+    <div id="slider">
+
+        <div id="slide1">
+            <h1  class="slide" >Text 1</h1>
+            <p class="slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget tellus et tortor malesuada venenatis et et ex. Maecenas convallis laoreet malesuada.</p>
+        </div>
+
+        <div id="slide2">
+            <h1 class="slide" >Text 2</h1>
+            <p class="slide">Ut malesuada pulvinar mi quis posuere. Nullam consequat venenatis felis, a varius lectus pellentesque sed. Etiam pulvinar, nisl sed tristique placerat, leo felis hendrerit justo, nec aliquam felis libero at leo.</p>
+        </div>
+
+        <div id="slide3">
+            <h1 class="slide" >Text 3</h1>
+            <p class="slide">Quisque luctus lobortis nulla in sodales. Curabitur vulputate, ipsum sit amet elementum imperdiet, risus libero posuere eros, eget malesuada lorem libero sed est.</p>
+        </div>
+
+        <div id="slide4">
+            <h1 class="slide" >Text 4</h1>
+            <p class="slide">Nullam eget felis sed velit vulputate auctor.</p>
+        </div>
+
+    </div>
+
+    <div id="btns">
+        <button id="btn1"></button>
+        <button id="btn2"></button>
+        <button id="btn3"></button>
+        <button id="btn4"></button>
+
+    </div>
+
+</div>
+
+</body>
+
+<script>
+
+$(document).ready(function() {
+
+    $("#btn1").click(function() {
+        $("#slider").animate({left:"0px"},1500)
+    });
+
+    $("#btn2").click(function() {
+        $("#slider").animate({left:"-1000px"},1500)
+    });
+
+    $("#btn3").click(function() {
+        $("#slider").animate({left:"-2000px"},1500)
+    });
+
+    $("#btn4").click(function() {
+        $("#slider").animate({left:"-3000px"},1500)
+    });
+});
+
+</script>
+</html>
